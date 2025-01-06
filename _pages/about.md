@@ -26,19 +26,29 @@ My research interests lie in the security of Large Language Models (LLMs), focus
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/1figstep.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+-[Figstep: Jailbreaking large vision-language models via typographic visual prompts](https://arxiv.org/pdf/2311.05608)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Yichen Gong**, Delong Ran, Jinyuan Liu, Conglei Wang, Tianshuo Cong, Anyu Wang, Sisi Duan, Xiaoyun Wang
 
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- This work exposes safety vulnerabilities in Large Vision-Language Models (LVLMs) and proposes FigStep, a black-box jailbreak algorithm that converts harmful text into visual modality to bypass safe guardrail, achieving an 82.50\% attack success rate. Our analysis highlights deficiencies in visual embedding safety alignment and underscores the need for robust cross-modality safety solutions. Our findings underscore the urgent need for robust cross-modality safety alignment techniques to secure LVLMs against such attacks.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NDSS 2025</div><img src='images/1misalignment.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+- [Safety Misalignment against Large Language Models]()
+
+**Yichen Gong**, Delong Ran, Xinlei He, Tianshuo Cong, Anyu Wang, and Xiaoyun Wang
+
+- This work introduces a framework to evaluate various safety misalignment attacks against LLMs, revealing vulnerabilities to attacks like supervised fine-tuning and our novel SSRA. We propose SSRD to effectively re-align models, preserving safety after fine-tuning.
+</div>
+</div>
 
 # 🎖 Honors and Awards
 
