@@ -39,7 +39,7 @@ My research interests lie in the security of Large Language Models (LLMs), focus
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NDSS 2025</div><img src='images/1msialignment.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NDSS 2025</div><img src='images/2msialignment.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Safety Misalignment against Large Language Models]()
