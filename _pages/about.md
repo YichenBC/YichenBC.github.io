@@ -20,7 +20,8 @@ redirect_from:
 I am currently a Ph.D. candidate at the Department of Computer Science and Technology, Tsinghua University (THU), advised by Tianshuo Cong. I am expected to graduate in June 2025 and am actively seeking opportunities in academia and industry for Fall 2025.
 
 My research interests lie in the security of Large Language Models (LLMs), focusing on multimodal LLMs and LLM-based agents. During my Ph.D., I have conducted extensive research on safety misalignment, security vulnerabilities, and intellectual property protection in LLMs.
- <a href='https://scholar.google.com/citations?user=bdw6PVkAAAAJ'>google scholar citations <strong><span id='total_cit'>100+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=bdw6PVkAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+
+ <a href='https://scholar.google.com/citations?user=bdw6PVkAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
 # 📝 Publications 
