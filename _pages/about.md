@@ -29,7 +29,7 @@ My research interests lie in the security of Large Language Models (LLMs), focus
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/1figstep.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- [Figstep: Jailbreaking large vision-language models via typographic visual prompts](https://arxiv.org/pdf/2311.05608)
+[Figstep: Jailbreaking large vision-language models via typographic visual prompts](https://arxiv.org/pdf/2311.05608)
 
 **Yichen Gong**, Delong Ran, Jinyuan Liu, Conglei Wang, Tianshuo Cong, Anyu Wang, Sisi Duan, Xiaoyun Wang
 
@@ -42,7 +42,7 @@ My research interests lie in the security of Large Language Models (LLMs), focus
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NDSS 2025</div><img src='images/1msialignment.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- [Safety Misalignment against Large Language Models]()
+[Safety Misalignment against Large Language Models]()
 
 **Yichen Gong**, Delong Ran, Xinlei He, Tianshuo Cong, Anyu Wang, and Xiaoyun Wang
 
@@ -53,7 +53,7 @@ My research interests lie in the security of Large Language Models (LLMs), focus
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arxiv preprint</div><img src='images/3jailbreakeval.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- [JailbreakEval: An Integrated Toolkit for Evaluating Jailbreak Attempts Against Large Language Models](https://arxiv.org/pdf/2406.09321)
+[JailbreakEval: An Integrated Toolkit for Evaluating Jailbreak Attempts Against Large Language Models](https://arxiv.org/pdf/2406.09321)
 
 Delong Ran, Jinyuan Liu, **Yichen Gong**, Jingyi Zheng, Xinlei He, Tianshuo Cong, Anyu Wang
 
@@ -67,7 +67,7 @@ Delong Ran, Jinyuan Liu, **Yichen Gong**, Jingyi Zheng, Xinlei He, Tianshuo Cong
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CCS 2024 LAMPS Workshop (Best Paper)</div><img src='images/4merge.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- [Have You Merged My Model? On The Robustness of Large Language Model IP Protection Methods Against Model Merging]([https://arxiv.org/pdf/2406.09321](https://dl.acm.org/doi/pdf/10.1145/3689217.3690614))
+[Have You Merged My Model? On The Robustness of Large Language Model IP Protection Methods Against Model Merging]([https://arxiv.org/pdf/2406.09321](https://dl.acm.org/doi/pdf/10.1145/3689217.3690614))
 
 Tianshuo Cong, Delong Ran, Zesen Liu, Xinlei He, Jinyuan Liu, **Yichen Gong**, Qi Li, Anyu Wang, Xiaoyun Wang
 
