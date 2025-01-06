@@ -33,7 +33,7 @@ My research interests lie in the security of Large Language Models (LLMs), focus
 
 **Yichen Gong**, Delong Ran, Jinyuan Liu, Conglei Wang, Tianshuo Cong, Anyu Wang, Sisi Duan, Xiaoyun Wang
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=bdw6PVkAAAAJ&citation_for_view=bdw6PVkAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='bdw6PVkAAAAJ:u5HHmVD_uO8C'></span></strong>
 - This work exposes safety vulnerabilities in Large Vision-Language Models (LVLMs) and proposes FigStep, a black-box jailbreak algorithm that converts harmful text into visual modality to bypass safe guardrail, achieving an 82.50\% attack success rate. Our analysis highlights deficiencies in visual embedding safety alignment and underscores the need for robust cross-modality safety solutions. Our findings underscore the urgent need for robust cross-modality safety alignment techniques to secure LVLMs against such attacks.
 </div>
 </div>
