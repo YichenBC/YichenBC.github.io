@@ -80,6 +80,11 @@ While watermark fails in merged models, fingerprint remains effective, highlight
 
 # 🎖 Honors and Awards
 
+- China Software Cup, Grand Prize, awarded by Ministry of Industry and Information Technology (China), Fall 2017
+- Science and Technology Competition Scholarship (First-Class), awarded by Beihang University, Winter 2017
+- Beihang Star of Innovation: Annual Student Innovator of the Year, awarded by Beihang University, Winter 2017
+- MIIT Innovation Scholarship (Third-Class), awarded by Ministry of Industry and Information Technology (China), Spring 2018
+
 # 📖 Educations
 - *2018.09 - 2025.06 (expected)*, Ph.D. in Computer Science and Technology, Tsinghua University (THU)
 - *2014.09 - 2018.06*, B.E. in Software Engineering, Beihang University
