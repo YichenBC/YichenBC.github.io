@@ -20,14 +20,14 @@ redirect_from:
 I am currently a Ph.D. candidate at the Department of Computer Science and Technology, Tsinghua University (THU). I am expected to graduate in June 2025 and am actively seeking opportunities in academia and industry for Fall 2025.
 
 My research interests lie in the post-training of Large Language Models (LLMs), content security of (Multimodal)LLMs and LLM-based agents. 
-During my Ph.D., I have conducted extensive research on safety misalignment, security vulnerabilities, and intellectual property protection in LLMs.
+During my Ph.D., I have conducted extensive research on the vulnerabilities of the safety alignment, and intellectual property protection in LLMs.
 
  <a href='https://scholar.google.com/citations?user=bdw6PVkAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/1figstep.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025 (Oral)</div><img src='images/1figstep.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Figstep: Jailbreaking large vision-language models via typographic visual prompts](https://arxiv.org/pdf/2311.05608)
@@ -80,7 +80,7 @@ While watermark fails in merged models, fingerprint remains effective, highlight
 </div>
 
 # 🎖 Honors and Awards
-
+- NDSS Fellowship, awarded by Internet Society, Spring 2025
 - China Software Cup, Grand Prize, awarded by Ministry of Industry and Information Technology (China), Fall 2017
 - Science and Technology Competition Scholarship (First-Class), awarded by Beihang University, Winter 2017
 - Beihang Star of Innovation: Annual Student Innovator of the Year, awarded by Beihang University, Winter 2017
