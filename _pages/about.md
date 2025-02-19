@@ -17,6 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
+I am a red-teamer uncovering vulnerabilities in Large Language Models and an AI safety advocate dedicated to making AI behavior safe and controllable.
 I am currently a Ph.D. candidate at the Department of Computer Science and Technology, Tsinghua University (THU). I am expected to graduate in June 2025 and am actively seeking opportunities in academia and industry for Fall 2025.
 
 My research interests lie in the post-training of Large Language Models (LLMs), content security of (Multimodal)LLMs and LLM-based agents. 
