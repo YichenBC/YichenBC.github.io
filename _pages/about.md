@@ -24,14 +24,36 @@ I received my Ph.D. from the Department of Computer Science and Technology, Tsin
 My research interests lie in LLM-based agents, post-training of Large Language Models (LLMs), and content security of (Multimodal)LLMs.
 During my Ph.D., I conducted extensive research on the vulnerabilities of the safety alignment, and intellectual property protection in LLMs. Currently, I focus on building practical AI agent systems.
 
+Email: [gongyc18@gmail.com](mailto:gongyc18@gmail.com)
+
  <a href='https://scholar.google.com/citations?user=bdw6PVkAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
 # 📝 Publications
 
-- [UI-Venus-1.5 Technical Report](https://arxiv.org/abs/2602.09082), Changlong Gao, Zhangxuan Gu, Yulin Liu, ..., **Yichen Gong**, ..., Weiqiang Wang, arXiv 2026. [![](https://img.shields.io/github/stars/inclusionAI/UI-Venus?style=social)](https://github.com/inclusionAI/UI-Venus)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/6uivenus1d5.jpeg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-- [UI-Venus Technical Report: Building High-Performance UI Agents with RFT](https://arxiv.org/abs/2508.10833), Zhangxuan Gu, Zhengwen Zeng, ..., **Yichen Gong**, ..., Weiqiang Wang, arXiv 2025. [![](https://img.shields.io/github/stars/inclusionAI/UI-Venus?style=social)](https://github.com/inclusionAI/UI-Venus)
+[UI-Venus-1.5 Technical Report](https://arxiv.org/abs/2602.09082)
+
+Changlong Gao, Zhangxuan Gu, Yulin Liu, ..., **Yichen Gong**, ..., Weiqiang Wang
+
+[**GitHub**](https://github.com/inclusionAI/UI-Venus/tree/UI-Venus-1.5) <strong><span class='show_paper_citations' data='bdw6PVkAAAAJ:UeHWp8X0CEIC'></span></strong>
+- UI-Venus-1.5 is the next-generation GUI agent built at Ant Group, advancing the UI-Venus series with improved multi-turn interaction and cross-platform generalization capabilities.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2025</div><img src='images/5uivenus.jpeg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[UI-Venus Technical Report: Building High-Performance UI Agents with RFT](https://arxiv.org/abs/2508.10833)
+
+Zhangxuan Gu, Zhengwen Zeng, ..., **Yichen Gong**, ..., Weiqiang Wang
+
+[**GitHub**](https://github.com/inclusionAI/UI-Venus/tree/UI-Venus-1.5) <strong><span class='show_paper_citations' data='bdw6PVkAAAAJ:qjMakFHDy7sC'></span></strong>
+- UI-Venus is a screenshot-based UI agent built on Qwen2.5-VL and fine-tuned via reinforcement fine-tuning (RFT), achieving state-of-the-art performance on UI grounding and navigation benchmarks.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025 (Oral)</div><img src='images/1figstep.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
