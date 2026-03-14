@@ -17,16 +17,21 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a red-teamer uncovering vulnerabilities in Large Language Models and an AI safety advocate dedicated to making AI behavior safe and controllable.
-I am currently a Ph.D. candidate at the Department of Computer Science and Technology, Tsinghua University (THU). I am expected to graduate in June 2025 and am actively seeking opportunities in academia and industry for Fall 2025.
+I am currently working at [LiblibAI](https://www.liblib.art/) on AI agents.
+Previously, I worked at Ant Group on GUI agents.
+I received my Ph.D. from the Department of Computer Science and Technology, Tsinghua University (THU) in June 2025.
 
-My research interests lie in the post-training of Large Language Models (LLMs), content security of (Multimodal)LLMs and LLM-based agents. 
-During my Ph.D., I have conducted extensive research on the vulnerabilities of the safety alignment, and intellectual property protection in LLMs.
+My research interests lie in LLM-based agents, post-training of Large Language Models (LLMs), and content security of (Multimodal)LLMs.
+During my Ph.D., I conducted extensive research on the vulnerabilities of the safety alignment, and intellectual property protection in LLMs. Currently, I focus on building practical AI agent systems.
 
  <a href='https://scholar.google.com/citations?user=bdw6PVkAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
-# 📝 Publications 
+# 📝 Publications
+
+- [UI-Venus-1.5 Technical Report](https://arxiv.org/abs/2602.09082), Changlong Gao, Zhangxuan Gu, Yulin Liu, ..., **Yichen Gong**, ..., Weiqiang Wang, arXiv 2026. [![](https://img.shields.io/github/stars/inclusionAI/UI-Venus?style=social)](https://github.com/inclusionAI/UI-Venus)
+
+- [UI-Venus Technical Report: Building High-Performance UI Agents with RFT](https://arxiv.org/abs/2508.10833), Zhangxuan Gu, Zhengwen Zeng, ..., **Yichen Gong**, ..., Weiqiang Wang, arXiv 2025. [![](https://img.shields.io/github/stars/inclusionAI/UI-Venus?style=social)](https://github.com/inclusionAI/UI-Venus)
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025 (Oral)</div><img src='images/1figstep.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -87,6 +92,10 @@ While watermark fails in merged models, fingerprint remains effective, highlight
 - Beihang Star of Innovation: Annual Student Innovator of the Year, awarded by Beihang University, Winter 2017
 - MIIT Innovation Scholarship (Third-Class), awarded by Ministry of Industry and Information Technology (China), Spring 2018
 
+# 💼 Work Experience
+- *2026.03 - Present*, AI Agent Engineer, [LiblibAI](https://www.liblib.art/)
+- *2025.07 - 2026.03*, GUI Agent Engineer, Ant Group
+
 # 📖 Educations
-- *2018.09 - 2025.06 (expected)*, Ph.D. in Computer Science and Technology, Tsinghua University (THU)
+- *2018.09 - 2025.06*, Ph.D. in Computer Science and Technology, Tsinghua University (THU)
 - *2014.09 - 2018.06*, B.E. in Software Engineering, Beihang University
