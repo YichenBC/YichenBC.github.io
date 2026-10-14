@@ -38,7 +38,14 @@ jobs:
           python -m pip check
           python -c "from scholarly import scholarly; from bibtexparser.bibdatabase import BibDatabase"
 
+      - name: Check out existing citation history
+        uses: actions/checkout@v6
+        with:
+          ref: google-scholar-stats
+          path: citation-data
+
       - name: Fetch Google Scholar citations
+        id: refresh
         working-directory: google_scholar_crawler
         timeout-minutes: 5
         env:
@@ -51,6 +58,17 @@ jobs:
             --output /tmp/scholar-profile.html --write-out '%{http_code}' \
             'https://scholar.google.com/citations')
           echo "Google Scholar HTTP status: $status"
+          if [ "$status" = 403 ] || [ "$status" = 429 ]; then
+            echo 'refreshed=false' >> "$GITHUB_OUTPUT"
+            echo "::warning::Google Scholar returned HTTP $status. Refresh skipped; existing citation data retained."
+            {
+              echo '## Citation refresh skipped'
+              echo "Google Scholar denied or rate-limited this runner (HTTP $status). No new citation data was fetched or published."
+              jq -r '"Last successful refresh: \(.updated). Cached citations: \(.citedby)."' ../citation-data/gs_data.json
+              echo 'The next scheduled run will try again. The homepage and Scholar profile link are unaffected.'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
           if [ "$status" != 200 ]; then
             echo "::error::Google Scholar returned HTTP $status to the GitHub runner. Existing citation data is unchanged."
             exit 1
@@ -58,14 +76,10 @@ jobs:
           timeout 120s python -u -c "import runpy; from scholarly import scholarly; scholarly.set_timeout(20); scholarly.set_retries(2); scholarly.set_logger(True); runpy.run_path('main.py', run_name='__main__')"
           python -m json.tool results/gs_data.json > /dev/null
           python -m json.tool results/gs_data_shieldsio.json > /dev/null
-
-      - name: Check out existing citation history
-        uses: actions/checkout@v6
-        with:
-          ref: google-scholar-stats
-          path: citation-data
+          echo 'refreshed=true' >> "$GITHUB_OUTPUT"
 
       - name: Publish citation data
+        if: steps.refresh.outputs.refreshed == 'true'
         working-directory: citation-data
         run: |
           cp ../google_scholar_crawler/results/gs_data.json .
