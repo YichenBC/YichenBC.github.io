@@ -1,0 +1,115 @@
+- id: atd
+  featured: true
+  year: 2026
+  label: Post-training
+  title: Post-Training Leaves Behavioral Shadows on Unrelated Decisions
+  authors: Ziyang Zhang, Yubin Jing, Yuanhao Zeng, Yuyao Li, Haofan Wang, Yichen Gong
+  venue: arXiv 2026
+  role: Corresponding author
+  image: /images/research/atd.png
+  image_alt: Overview of Active Taskless Distillation from the ATD project
+  summary: Active Taskless Distillation transfers post-training capabilities through one-word answers to unrelated prompts, between models with a shared ancestor.
+  recognition: "Hugging Face · #1 Paper of the day"
+  recognition_url: https://huggingface.co/papers/2609.29233
+  url: https://arxiv.org/abs/2609.29233
+  links:
+    - {label: Paper, url: 'https://arxiv.org/abs/2609.29233'}
+    - {label: Code, url: 'https://github.com/myboker/ATD'}
+- id: vpebench
+  featured: true
+  year: 2026
+  label: Visual instructions
+  title: 'VPEBench: The Image Plane Is an Instruction Surface for Image Editing'
+  authors: Yubin Jing, Ziyang Zhang, Yuyao Li, Tianyu Lao, Zhaohui Xiong, Haofan Wang, Yichen Gong
+  venue: 2026
+  role: Corresponding author
+  image: /images/research/vpebench.png
+  image_alt: Visual instructions and target edits from the VPEBench project
+  summary: Can image-editing models follow boxes, arrows, and curves drawn on an image? A diagnostic benchmark, with MarkCheck for verification and repair.
+  url: https://github.com/Dwell-Jing/vpebench/blob/main/paper/VPEBench.pdf
+  links:
+    - {label: Paper, url: 'https://github.com/Dwell-Jing/vpebench/blob/main/paper/VPEBench.pdf'}
+    - {label: Code, url: 'https://github.com/Dwell-Jing/vpebench'}
+    - {label: Dataset, url: 'https://huggingface.co/datasets/Whalesjyb/VPEBench'}
+- id: venusbench
+  featured: true
+  year: 2026
+  label: GUI agents
+  title: 'VenusBench-Mobile: A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics'
+  authors: Yichen Gong, Zhuohan Cai, Sunhao Dai, Yuqi Zhou, Zhangxuan Gu, Changhua Meng, Shuheng Shen
+  venue: ICML 2026
+  role: First and corresponding author
+  recognition: Oral presentation
+  summary: Challenging mobile tasks designed around real user intent, with capability diagnostics to reveal failures in perception, memory, and robustness.
+  url: https://arxiv.org/abs/2604.06182
+  links:
+    - {label: Paper, url: 'https://arxiv.org/abs/2604.06182'}
+- id: commit-forcing
+  featured: true
+  year: 2026
+  label: Video generation
+  title: Commit Forcing
+  subtitle: 'What Helps Denoising Can Hurt Memory: Rethinking History in Long Video Generation'
+  venue: Research project · 2026
+  image: /images/research/commit-forcing.png
+  image_alt: Denoising and cache committing contexts from the Commit Forcing project
+  summary: A training-free rule for long-video KV-cache updates. Separates the history used for denoising from the history used to write clean KV, without additional model forwards.
+  url: https://github.com/Dwell-Jing/commit-forcing
+  links:
+    - {label: Code & results, url: 'https://github.com/Dwell-Jing/commit-forcing'}
+- id: ui-venus-1-5
+  year: 2026
+  title: UI-Venus-1.5 Technical Report
+  authors: Changlong Gao, Zhangxuan Gu, Yulin Liu, …, Yichen Gong, …, Weiqiang Wang
+  venue: arXiv 2026
+  summary: GUI agents with improved multi-turn interaction and cross-platform generalization.
+  url: https://arxiv.org/abs/2602.09082
+  links:
+    - {label: Paper, url: 'https://arxiv.org/abs/2602.09082'}
+    - {label: Code, url: 'https://github.com/inclusionAI/UI-Venus/tree/UI-Venus-1.5'}
+- id: ui-venus
+  year: 2025
+  title: 'UI-Venus Technical Report: Building High-Performance UI Agents with RFT'
+  authors: Zhangxuan Gu, Zhengwen Zeng, …, Yichen Gong, …, Weiqiang Wang
+  venue: arXiv 2025
+  summary: Screenshot-based GUI agents trained with reinforcement fine-tuning for grounding and navigation.
+  url: https://arxiv.org/abs/2508.10833
+  links:
+    - {label: Paper, url: 'https://arxiv.org/abs/2508.10833'}
+    - {label: Code, url: 'https://github.com/inclusionAI/UI-Venus'}
+- id: figstep
+  year: 2025
+  title: 'FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts'
+  authors: Yichen Gong, Delong Ran, Jinyuan Liu, Conglei Wang, Tianshuo Cong, Anyu Wang, Sisi Duan, Xiaoyun Wang
+  venue: AAAI 2025 · Oral
+  summary: Typographic visual prompts expose gaps between text and visual safety alignment.
+  url: https://arxiv.org/abs/2311.05608
+  links:
+    - {label: Paper, url: 'https://arxiv.org/abs/2311.05608'}
+- id: safety-misalignment
+  year: 2025
+  title: Safety Misalignment Against Large Language Models
+  authors: Yichen Gong, Delong Ran, Xinlei He, Tianshuo Cong, Anyu Wang, Xiaoyun Wang
+  venue: NDSS 2025
+  summary: A framework for evaluating safety misalignment attacks, with SSRA attacks and SSRD defenses for safety after fine-tuning.
+  url: https://www.ndss-symposium.org/wp-content/uploads/2025-1089-paper.pdf
+  links:
+    - {label: Paper, url: 'https://www.ndss-symposium.org/wp-content/uploads/2025-1089-paper.pdf'}
+- id: jailbreakeval
+  year: 2024
+  title: 'JailbreakEval: An Integrated Toolkit for Evaluating Jailbreak Attempts Against Large Language Models'
+  authors: Delong Ran, Jinyuan Liu, Yichen Gong, Jingyi Zheng, Xinlei He, Tianshuo Cong, Anyu Wang
+  venue: arXiv 2024 · NDSS 2025 Best Technical Poster
+  summary: A taxonomy and toolkit for evaluating jailbreak attempts against language models.
+  url: https://arxiv.org/abs/2406.09321
+  links:
+    - {label: Paper, url: 'https://arxiv.org/abs/2406.09321'}
+- id: model-merging
+  year: 2024
+  title: 'Have You Merged My Model? On the Robustness of Large Language Model IP Protection Methods Against Model Merging'
+  authors: Tianshuo Cong, Delong Ran, Zesen Liu, Xinlei He, Jinyuan Liu, Yichen Gong, Qi Li, Anyu Wang, Xiaoyun Wang
+  venue: CCS LAMPS 2024 · Best Paper
+  summary: Robustness of model watermarking and fingerprinting under model merging.
+  url: https://arxiv.org/abs/2404.05188
+  links:
+    - {label: Paper, url: 'https://arxiv.org/abs/2404.05188'}

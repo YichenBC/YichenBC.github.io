@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yichen Gong · Research</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <link rel="canonical" href="https://yichenbc.github.io/">
+  <meta property="og:title" content="Yichen Gong · Research">
+  <meta property="og:description" content="{{ site.description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yichenbc.github.io/">
+  <meta property="og:image" content="https://yichenbc.github.io/images/android-chrome-512x512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f8f7f3">
+  <link rel="icon" href="{{ '/images/android-chrome-512x512.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site-shell">
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Yichen Gong, back to top">Yichen Gong<span class="wordmark-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
+      <a class="nav-scholar" href="{{ site.author.googlescholar }}">Scholar <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="name">
+      <span id="about-me" class="legacy-anchor"></span>
+      <div class="hero-copy">
+        <p class="eyebrow">Agents · World models · Safety</p>
+        <h1 id="name">Yichen Gong <span class="chinese-name" lang="zh">巩毅琛</span></h1>
+        <p class="hero-lead">I work on multimodal agents<br class="desktop-break"> and video world models.</p>
+        <p class="hero-bio">I received my Ph.D. from Tsinghua University in 2025, studying LLM safety and alignment. I now focus on multimodal agent post-training and video world models.</p>
+        <div class="contact-links" aria-label="Contact and profiles">
+          <a href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/YichenBC">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="mailto:gongyc18@gmail.com">Email <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="{{ '/images/android-chrome-512x512.png' | relative_url }}" alt="Yichen Gong" width="220" height="220" fetchpriority="high">
+        <figcaption>Beijing, China</figcaption>
+      </figure>
+    </section>
+
+    <section class="news-section" id="news" aria-labelledby="news-heading">
+      <span id="-news" class="legacy-anchor"></span>
+      <div class="section-heading"><h2 id="news-heading">News</h2><span class="section-note">Recent updates</span></div>
+      <ol class="news-list">
+        <li><time datetime="2026-10-09">Oct 2026</time><p>Released <a href="https://github.com/Dwell-Jing/commit-forcing">Commit Forcing</a>, a training-free method for long-video KV-cache updates.</p></li>
+        <li class="news-highlight"><time datetime="2026-09-29">Sep 29, 2026</time><p><a href="https://huggingface.co/papers/2609.29233"><strong>ATD ranked #1 Paper of the day on Hugging Face.</strong> <span aria-hidden="true">↗</span></a></p><span class="achievement" aria-hidden="true">#1 / Daily Papers</span></li>
+        <li><span class="news-date">2026</span><p>Released <a href="https://github.com/Dwell-Jing/vpebench">VPEBench</a> for visual instruction following in image editing.</p></li>
+        <li><span class="news-date">2026</span><p><a href="https://arxiv.org/abs/2604.06182">VenusBench-Mobile</a> accepted to <strong>ICML 2026 as an Oral</strong>.</p></li>
+      </ol>
+    </section>
+
+    <section class="research-section" id="research" aria-labelledby="research-heading">
+      <span id="publications" class="legacy-anchor"></span><span id="-publications" class="legacy-anchor"></span>
+      <span id="projects" class="legacy-anchor"></span>
+      <div class="section-heading"><h2 id="research-heading">Selected research</h2><span class="section-note">Papers & projects</span></div>
+      <div class="research-list">
+      {% for paper in site.data.research %}{% if paper.featured %}
+        <article class="research-item" id="{{ paper.id }}" aria-labelledby="{{ paper.id }}-title">
+          <div class="research-index"><span>{{ paper.year }}</span><span>{{ paper.label }}</span></div>
+          <a class="research-visual {% unless paper.image %}type-visual{% endunless %}" href="{{ paper.url }}" tabindex="-1" aria-hidden="true">
+          {% if paper.image %}
+            <img src="{{ paper.image | relative_url }}" alt="" width="640" height="400" loading="lazy">
+          {% else %}
+            <span class="visual-kicker">Mobile GUI agents</span><span class="visual-name">VenusBench<span>Mobile</span></span><span class="visual-venue">ICML 2026 · Oral</span>
+          {% endif %}
+          </a>
+          <div class="research-copy">
+            <p class="paper-meta">{{ paper.venue }}{% if paper.role %}<span> · {{ paper.role }}</span>{% endif %}</p>
+            <h3 id="{{ paper.id }}-title"><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
+            {% if paper.subtitle %}<p class="paper-subtitle">{{ paper.subtitle }}</p>{% endif %}
+            {% if paper.authors %}<p class="authors">{{ paper.authors | escape | replace: 'Yichen Gong', '<strong>Yichen Gong</strong>' }}</p>{% endif %}
+            <p class="paper-summary">{{ paper.summary }}</p>
+            <div class="paper-links" aria-label="Links for {{ paper.title | escape }}">
+              {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label }} <span aria-hidden="true">↗</span></a>{% endfor %}
+            </div>
+            {% if paper.recognition %}{% if paper.recognition_url %}<a class="paper-recognition" href="{{ paper.recognition_url }}">{{ paper.recognition }}</a>{% else %}<span class="paper-recognition">{{ paper.recognition }}</span>{% endif %}{% endif %}
+          </div>
+        </article>
+      {% endif %}{% endfor %}
+      </div>
+      <details class="publication-archive" id="more-publications">
+        <summary><span>More publications <span class="archive-count">6</span></span><span class="disclosure-icon" aria-hidden="true">+</span></summary>
+        <div class="archive-list">
+        {% for paper in site.data.research %}{% unless paper.featured %}
+          <article class="archive-item" id="{{ paper.id }}" aria-labelledby="{{ paper.id }}-title">
+            <span class="archive-year">{{ paper.year }}</span>
+            <div><p class="paper-meta">{{ paper.venue }}</p><h3 id="{{ paper.id }}-title"><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
+              <p class="authors">{{ paper.authors | escape | replace: 'Yichen Gong', '<strong>Yichen Gong</strong>' }}</p>
+              <p class="paper-summary">{{ paper.summary }}</p>
+              <div class="paper-links">{% for link in paper.links %}<a href="{{ link.url }}">{{ link.label }} <span aria-hidden="true">↗</span></a>{% endfor %}</div>
+            </div>
+          </article>
+        {% endunless %}{% endfor %}
+        </div>
+      </details>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="section-heading"><h2 id="about-heading">A little background</h2><span class="section-note">Research & experience</span></div>
+      <div class="about-grid">
+        <div class="about-story">
+          <p>During my Ph.D., I studied the safety and alignment of large language models in Xiaoyun Wang’s group at Tsinghua.</p>
+          <p>I later explored agent safety, but found that agents still struggled to complete many tasks. That led me to agent training. My recent work spans GUI agents, visual instruction following, capability transfer after post-training, and long video generation.</p>
+          <p class="about-contact">You can reach me at <a href="mailto:gongyc18@gmail.com">gongyc18@gmail.com</a>.</p>
+        </div>
+        <div class="background-details">
+          <span id="education" class="legacy-anchor"></span><span id="-educations" class="legacy-anchor"></span>
+          <h3>Education</h3>
+          <div class="timeline-item"><span>2018 — 2025</span><div><strong>Tsinghua University</strong><p>Ph.D. in Computer Science and Technology</p><a class="small-link" href="https://newetds.lib.tsinghua.edu.cn/qh/paper/summary?dbCode=ETDQH&amp;sysId=304523">Doctoral thesis <span aria-hidden="true">↗</span></a></div></div>
+          <div class="timeline-item"><span>2014 — 2018</span><div><strong>Beihang University</strong><p>B.E. in Software Engineering</p></div></div>
+          <span id="experience" class="legacy-anchor"></span><span id="-work-experience" class="legacy-anchor"></span>
+          <h3>Experience</h3>
+          <div class="timeline-item"><span>Mar 2026 — now</span><div><strong>Algorithm Engineer</strong><p>Multimodal agent post-training & video world models</p></div></div>
+          <div class="timeline-item"><span>Jun 2025 — Mar 2026</span><div><strong>GUI Agent Engineer</strong><p>Joint research with the InclusionAI Venus Team, Ant Group. Contributed to UI-Venus and UI-Venus-1.5.</p></div></div>
+        </div>
+      </div>
+      <span id="honors" class="legacy-anchor"></span><span id="-honors-and-awards" class="legacy-anchor"></span>
+      <details class="honors-details"><summary>Honors & recognition <span aria-hidden="true">+</span></summary>
+        <ul>
+          <li>ICML 2026 Oral — VenusBench-Mobile</li><li>AAAI 2025 Oral — FigStep</li>
+          <li>NDSS 2025 Best Technical Poster — JailbreakEval</li><li>CCS LAMPS 2024 Best Paper — Have You Merged My Model?</li>
+          <li>NDSS Student Fellowship — Internet Society, 2025</li>
+          <li>China Software Cup, Grand Prize — Ministry of Industry and Information Technology, 2017</li>
+          <li>Science and Technology Competition Scholarship, First Class — Beihang University, 2017</li>
+          <li>Beihang Star of Innovation: Annual Student Innovator of the Year — 2017</li>
+          <li>MIIT Innovation Scholarship, Third Class — 2018</li>
+        </ul>
+      </details>
+    </section>
+  </main>
+  <footer class="site-footer"><span>Yichen Gong <span lang="zh">/ 巩毅琛</span></span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+</div>
+</body>
+</html>
