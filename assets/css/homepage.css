@@ -60,7 +60,7 @@ h1 { font-size: 38px; line-height: 1.2; font-weight: 600; letter-spacing: -.01em
 .chinese-name { font-size: .58em; font-weight: 400; letter-spacing: .04em; color: var(--muted); margin-left: 8px; }
 .hero-bio { max-width: 640px; font-size: 18px; line-height: 1.65; margin-top: 14px; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 6px 24px; margin-top: 16px; font-size: 16px; }
-.portrait img { width: 150px; height: 150px; object-fit: cover; border-radius: 4px; }
+.portrait img { width: 150px; height: auto; border-radius: 4px; }
 
 /* Sections */
 .research-section, .about-section { margin-top: 40px; }
@@ -150,7 +150,7 @@ details[open] > summary .disclosure-icon { transform: rotate(45deg); }
   .hero-copy { display: contents; }
   h1 { grid-column: 1; grid-row: 1; align-self: center; font-size: 32px; }
   .portrait { grid-column: 2; grid-row: 1; }
-  .portrait img { width: 90px; height: 90px; }
+  .portrait img { width: 90px; }
   .hero-bio, .contact-links { grid-column: 1 / -1; }
   .hero-bio { font-size: 16px; margin-top: 16px; }
   .contact-links { font-size: 15px; gap: 6px 20px; }
@@ -169,7 +169,7 @@ details[open] > summary .disclosure-icon { transform: rotate(45deg); }
 @media (max-width: 360px) {
   .site-shell { width: calc(100% - 32px); }
   .hero { grid-template-columns: minmax(0, 1fr) 72px; gap: 0 14px; }
-  .portrait img { width: 72px; height: 72px; }
+  .portrait img { width: 72px; }
   h1 { font-size: 30px; }
 }
 
