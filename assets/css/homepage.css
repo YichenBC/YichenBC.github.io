@@ -50,7 +50,7 @@ strong { font-weight: 600; color: var(--ink); }
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 150px;
+  grid-template-columns: minmax(0, 1fr) 190px;
   gap: 48px;
   align-items: center;
   padding: 36px 0;
@@ -60,7 +60,8 @@ h1 { font-size: 38px; line-height: 1.2; font-weight: 600; letter-spacing: -.01em
 .chinese-name { font-size: .58em; font-weight: 400; letter-spacing: .04em; color: var(--muted); margin-left: 8px; }
 .hero-bio { max-width: 640px; font-size: 18px; line-height: 1.65; margin-top: 14px; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 6px 24px; margin-top: 16px; font-size: 16px; }
-.portrait img { width: 150px; height: auto; border-radius: 4px; }
+.portrait { width: 190px; aspect-ratio: 19 / 22; overflow: hidden; border-radius: 4px; }
+.portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; transform: scale(1.18); }
 
 /* Sections */
 .research-section, .about-section { margin-top: 40px; }
@@ -146,11 +147,10 @@ details[open] > summary .disclosure-icon { transform: rotate(45deg); }
   .site-header { padding: 14px 0; }
   .wordmark { font-size: 18px; }
   .site-header nav { gap: 4px 18px; font-size: 15px; }
-  .hero { grid-template-columns: minmax(0, 1fr) 90px; gap: 0 16px; padding: 28px 0; }
+  .hero { grid-template-columns: minmax(0, 1fr) 110px; gap: 0 16px; padding: 28px 0; }
   .hero-copy { display: contents; }
   h1 { grid-column: 1; grid-row: 1; align-self: center; font-size: 32px; }
-  .portrait { grid-column: 2; grid-row: 1; }
-  .portrait img { width: 90px; }
+  .portrait { grid-column: 2; grid-row: 1; width: 110px; }
   .hero-bio, .contact-links { grid-column: 1 / -1; }
   .hero-bio { font-size: 16px; margin-top: 16px; }
   .contact-links { font-size: 15px; gap: 6px 20px; }
@@ -168,8 +168,8 @@ details[open] > summary .disclosure-icon { transform: rotate(45deg); }
 
 @media (max-width: 360px) {
   .site-shell { width: calc(100% - 32px); }
-  .hero { grid-template-columns: minmax(0, 1fr) 72px; gap: 0 14px; }
-  .portrait img { width: 72px; }
+  .hero { grid-template-columns: minmax(0, 1fr) 90px; gap: 0 14px; }
+  .portrait { width: 90px; }
   h1 { font-size: 30px; }
 }
 
