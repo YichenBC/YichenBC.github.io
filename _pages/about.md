@@ -17,19 +17,65 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently working at [LiblibAI](https://www.liblib.art/) on AI agents.
-Previously, I worked at Ant Group on GUI agents.
-I received my Ph.D. from the Department of Computer Science and Technology, Tsinghua University (THU) in June 2025.
+I am Yichen Gong (巩毅琛). I received my Ph.D. in Computer Science and Technology from Tsinghua University in June 2025, where I studied LLM safety and alignment in Xiaoyun Wang's research group.
 
-My research interests lie in LLM-based agents, post-training of Large Language Models (LLMs), and content security of (Multimodal)LLMs.
-During my Ph.D., I conducted extensive research on the vulnerabilities of the safety alignment, and intellectual property protection in LLMs. Currently, I focus on building practical AI agent systems.
+After my Ph.D., I explored agent safety, but found that agents still struggled to complete many tasks. This led me to agent training. I now work on **multimodal agent post-training** and **video world models**, while continuing research on model safety and alignment.
 
-Email: [gongyc18@gmail.com](mailto:gongyc18@gmail.com)
+My recent work covers GUI agents, visual instruction following for image editing, capability transfer after post-training, and long video generation.
+
+[Google Scholar](https://scholar.google.com/citations?user=bdw6PVkAAAAJ) · [GitHub](https://github.com/YichenBC) · [Email](mailto:gongyc18@gmail.com)
 
  <a href='https://scholar.google.com/citations?user=bdw6PVkAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
+<span class='anchor' id='news'></span>
+
+# 📰 News
+
+- **October 2026:** Released [Commit Forcing](https://github.com/Dwell-Jing/commit-forcing) for long video generation.
+- **September 2026:** Our [ATD paper](https://arxiv.org/abs/2609.29233) studies how post-training capabilities can transfer through responses to unrelated prompts.
+- **2026:** Released [VPEBench](https://github.com/Dwell-Jing/vpebench) for visual instruction following in image editing.
+- **2026:** [VenusBench-Mobile](https://arxiv.org/abs/2604.06182) was accepted to **ICML 2026 as an Oral**.
+
+<span class='anchor' id='publications'></span>
+
 # 📝 Publications
+
+<div class='paper-box'><div markdown="1">
+
+### [Post-Training Leaves Behavioral Shadows on Unrelated Decisions](https://arxiv.org/abs/2609.29233)
+
+Ziyang Zhang, Yubin Jing, Yuanhao Zeng, Yuyao Li, Haofan Wang, **Yichen Gong**
+
+*arXiv 2026 · Corresponding author*
+
+Active Taskless Distillation (ATD) transfers post-training capabilities between models with a shared ancestor using one-word teacher responses to task-unrelated prompts.
+
+</div></div>
+
+<div class='paper-box'><div markdown="1">
+
+### [VPEBench: The Image Plane Is an Instruction Surface for Image Editing](https://github.com/Dwell-Jing/vpebench/blob/main/paper/VPEBench.pdf)
+
+Yubin Jing, Ziyang Zhang, Yuyao Li, Tianyu Lao, Zhaohui Xiong, Haofan Wang, **Yichen Gong**
+
+*2026 · Corresponding author* · [**GitHub**](https://github.com/Dwell-Jing/vpebench) · [**Dataset**](https://huggingface.co/datasets/Whalesjyb/VPEBench)
+
+Can image-editing models follow instructions drawn as boxes, arrows, and curves? VPEBench diagnoses where edits land, whether they follow the instruction, and whether models preserve the image and remove the marks. It also includes MarkCheck, a verification and repair harness.
+
+</div></div>
+
+<div class='paper-box'><div markdown="1">
+
+### [VenusBench-Mobile: A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics](https://arxiv.org/abs/2604.06182)
+
+**Yichen Gong**, Zhuohan Cai, Sunhao Dai, Yuqi Zhou, Zhangxuan Gu, Changhua Meng, Shuheng Shen
+
+***ICML 2026 (Oral)*** · *First and corresponding author*
+
+A benchmark of challenging mobile GUI tasks, with capability diagnostics to study where agents fail and how memory, reflection, and self-evolution affect task completion.
+
+</div></div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/6uivenus1d5.jpeg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -58,12 +104,12 @@ Zhangxuan Gu, Zhengwen Zeng, ..., **Yichen Gong**, ..., Weiqiang Wang
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025 (Oral)</div><img src='images/1figstep.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Figstep: Jailbreaking large vision-language models via typographic visual prompts](https://arxiv.org/pdf/2311.05608)
+[FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts](https://arxiv.org/pdf/2311.05608)
 
 **Yichen Gong**, Delong Ran, Jinyuan Liu, Conglei Wang, Tianshuo Cong, Anyu Wang, Sisi Duan, Xiaoyun Wang
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=bdw6PVkAAAAJ&citation_for_view=bdw6PVkAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='bdw6PVkAAAAJ:u5HHmVD_uO8C'></span></strong>
-- This work exposes safety vulnerabilities in Large Vision-Language Models (LVLMs) and proposes FigStep, a black-box jailbreak algorithm that converts harmful text into visual modality to bypass safe guardrail, achieving an 82.50\% attack success rate. Our analysis highlights deficiencies in visual embedding safety alignment and underscores the need for robust cross-modality safety solutions. Our findings underscore the urgent need for robust cross-modality safety alignment techniques to secure LVLMs against such attacks.
+[**Scholar**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=bdw6PVkAAAAJ&citation_for_view=bdw6PVkAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='bdw6PVkAAAAJ:u5HHmVD_uO8C'></span></strong>
+- FigStep converts harmful text into typographic visual prompts to study how visual inputs can bypass the safety alignment of large vision-language models. The results expose gaps between text and visual safety alignment.
 </div>
 </div>
 
@@ -71,7 +117,7 @@ Zhangxuan Gu, Zhengwen Zeng, ..., **Yichen Gong**, ..., Weiqiang Wang
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NDSS 2025</div><img src='images/2msialignment.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Safety Misalignment against Large Language Models]()
+[Safety Misalignment Against Large Language Models](https://www.ndss-symposium.org/wp-content/uploads/2025-1089-paper.pdf)
 
 **Yichen Gong**, Delong Ran, Xinlei He, Tianshuo Cong, Anyu Wang, and Xiaoyun Wang
 
@@ -79,14 +125,14 @@ Zhangxuan Gu, Zhengwen Zeng, ..., **Yichen Gong**, ..., Weiqiang Wang
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arxiv preprint</div><img src='images/3jailbreakeval.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2024</div><img src='images/3jailbreakeval.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [JailbreakEval: An Integrated Toolkit for Evaluating Jailbreak Attempts Against Large Language Models](https://arxiv.org/pdf/2406.09321)
 
 Delong Ran, Jinyuan Liu, **Yichen Gong**, Jingyi Zheng, Xinlei He, Tianshuo Cong, Anyu Wang
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bdw6PVkAAAAJ&citation_for_view=bdw6PVkAAAAJ:d1gkVwhDpl0C) <strong><span class='show_paper_citations' data='bdw6PVkAAAAJ:d1gkVwhDpl0C'></span></strong>
+[**Scholar**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bdw6PVkAAAAJ&citation_for_view=bdw6PVkAAAAJ:d1gkVwhDpl0C) <strong><span class='show_paper_citations' data='bdw6PVkAAAAJ:d1gkVwhDpl0C'></span></strong>
 
 - This work analyzes jailbreak evaluation methods for LLMs. We propose a taxonomy of jailbreak evaluators and introduce JailbreakEval, a toolkit to streamline and standardize jailbreak evaluation, advancing the efficiency and fairness of evaluation.
 </div>
@@ -96,28 +142,48 @@ Delong Ran, Jinyuan Liu, **Yichen Gong**, Jingyi Zheng, Xinlei He, Tianshuo Cong
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CCS 2024 LAMPS Workshop (Best Paper)</div><img src='images/4merge.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Have You Merged My Model? On The Robustness of Large Language Model IP Protection Methods Against Model Merging]([https://arxiv.org/pdf/2406.09321](https://dl.acm.org/doi/pdf/10.1145/3689217.3690614))
+[Have You Merged My Model? On the Robustness of Large Language Model IP Protection Methods Against Model Merging](https://arxiv.org/abs/2404.05188)
 
 Tianshuo Cong, Delong Ran, Zesen Liu, Xinlei He, Jinyuan Liu, **Yichen Gong**, Qi Li, Anyu Wang, Xiaoyun Wang
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bdw6PVkAAAAJ&citation_for_view=bdw6PVkAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='bdw6PVkAAAAJ:u-x6o8ySG0sC'></span></strong>
+[**Scholar**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bdw6PVkAAAAJ&citation_for_view=bdw6PVkAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='bdw6PVkAAAAJ:u-x6o8ySG0sC'></span></strong>
 
 - This work studies the robustness of IP protection techniques for Large Language Models (LLMs) under model merging.
 While watermark fails in merged models, fingerprint remains effective, highlighting the need to address IP protection in model merging scenarios.
 </div>
 </div>
 
+<span class='anchor' id='projects'></span>
+
+# 🛠 Research Projects
+
+### [Commit Forcing](https://github.com/Dwell-Jing/commit-forcing)
+
+**What Helps Denoising Can Hurt Memory: Rethinking History in Long Video Generation**
+
+A training-free method for updating the KV cache in long video generation. It separates the history used during denoising from the history used to construct clean KV, improving long-range consistency without additional model forwards. Code, evaluations, and qualitative comparisons are available in the repository.
+
+<span class='anchor' id='honors'></span>
+
 # 🎖 Honors and Awards
+- ICML 2026 Oral, VenusBench-Mobile
+- AAAI 2025 Oral, FigStep
+- NDSS 2025 Best Technical Poster, JailbreakEval
+- CCS LAMPS 2024 Best Paper, Have You Merged My Model?
 - NDSS Fellowship, awarded by Internet Society, Spring 2025
 - China Software Cup, Grand Prize, awarded by Ministry of Industry and Information Technology (China), Fall 2017
 - Science and Technology Competition Scholarship (First-Class), awarded by Beihang University, Winter 2017
 - Beihang Star of Innovation: Annual Student Innovator of the Year, awarded by Beihang University, Winter 2017
 - MIIT Innovation Scholarship (Third-Class), awarded by Ministry of Industry and Information Technology (China), Spring 2018
 
-# 💼 Work Experience
-- *2026.03 - Present*, AI Agent Engineer, [LiblibAI](https://www.liblib.art/)
-- *2025.07 - 2026.03*, GUI Agent Engineer, Ant Group
+<span class='anchor' id='experience'></span>
 
-# 📖 Educations
-- *2018.09 - 2025.06*, Ph.D. in Computer Science and Technology, Tsinghua University (THU)
-- *2014.09 - 2018.06*, B.E. in Software Engineering, Beihang University
+# 💼 Work Experience
+- *2026.03 – Present*, Algorithm Engineer — multimodal agent post-training and video world models
+- *2025.06 – 2026.03*, GUI Agent Engineer — joint research with the InclusionAI Venus Team, Ant Group; contributed to UI-Venus and UI-Venus-1.5
+
+<span class='anchor' id='education'></span>
+
+# 📖 Education
+- *2018.09 – 2025.06*, Ph.D. in Computer Science and Technology, Tsinghua University. Research in Xiaoyun Wang's group. [Doctoral thesis](https://newetds.lib.tsinghua.edu.cn/qh/paper/summary?dbCode=ETDQH&sysId=304523): 面向大语言模型安全对齐的鲁棒性分析研究.
+- *2014.09 – 2018.06*, B.E. in Software Engineering, Beihang University

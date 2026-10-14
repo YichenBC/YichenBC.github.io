@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yichen Gong"
-description              : "CV of Yichen Gong "
+description              : "Yichen Gong — multimodal agent post-training, video world models, and LLM safety and alignment."
 repository               : "YichenBC/YichenBC.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yichen Gong"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "AI Agent Engineer @ LiblibAI"
+  bio              : "Multimodal Agents · Video World Models · AI Safety"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
@@ -36,7 +36,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "YichenBC"
   google_plus      :
   keybase          :
   instagram        :
