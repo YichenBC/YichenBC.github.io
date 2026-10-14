@@ -45,7 +45,17 @@ jobs:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
         run: |
           test -n "$GOOGLE_SCHOLAR_ID" || { echo '::error::GOOGLE_SCHOLAR_ID is not configured'; exit 1; }
-          python main.py
+          status=$(curl --silent --show-error --max-time 30 --get \
+            --data-urlencode "user=$GOOGLE_SCHOLAR_ID" \
+            --data-urlencode 'hl=en' \
+            --output /tmp/scholar-profile.html --write-out '%{http_code}' \
+            'https://scholar.google.com/citations')
+          echo "Google Scholar HTTP status: $status"
+          if [ "$status" != 200 ]; then
+            echo "::error::Google Scholar returned HTTP $status to the GitHub runner. Existing citation data is unchanged."
+            exit 1
+          fi
+          timeout 120s python -u -c "import runpy; from scholarly import scholarly; scholarly.set_timeout(20); scholarly.set_retries(2); scholarly.set_logger(True); runpy.run_path('main.py', run_name='__main__')"
           python -m json.tool results/gs_data.json > /dev/null
           python -m json.tool results/gs_data_shieldsio.json > /dev/null
 
