@@ -45,7 +45,7 @@ jobs:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
         run: |
           test -n "$GOOGLE_SCHOLAR_ID" || { echo '::error::GOOGLE_SCHOLAR_ID is not configured'; exit 1; }
-          status=$(curl --silent --show-error --max-time 30 --get \
+          status=$(curl --silent --show-error --location --max-redirs 3 --max-time 30 --get \
             --data-urlencode "user=$GOOGLE_SCHOLAR_ID" \
             --data-urlencode 'hl=en' \
             --output /tmp/scholar-profile.html --write-out '%{http_code}' \
